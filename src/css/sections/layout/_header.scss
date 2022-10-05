@@ -1,0 +1,218 @@
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    .desk {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 50px;
+        height: 185px;
+        background-color: white;
+        position: relative;
+        @media (max-width: 920px) {
+            display: none;
+        }
+        @media (max-width: 1350px) {
+            height: 142px;
+        }
+        ul.child {
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            left: 0;
+            top: 185px;
+            padding: 50px 50px 100px;
+            @media (max-width: 1350px) {
+                top: 142px;
+            }
+            .hide {
+                visibility: hidden;
+                position: absolute;
+            }
+            ul {
+                margin-right: 100px;
+                li {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    a {
+                        display: inline;
+                        .line {
+                            position: absolute;
+                            height: 1px;
+                            width: 0%;
+                            background-color: var(--green);
+                            bottom: -5px;
+                            transition: width 350ms ease-in-out;
+                        }
+                        &:hover {
+                            .line {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .left {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            .logo {
+                width: 250px;
+                @media (max-width: 1350px) {
+                    width: 150px;
+                }
+            }
+            .links {
+                display: flex;
+                align-self: center;
+                margin-left: 100px;
+                position: relative;
+                width: fit-content;
+                @media (max-width: 1350px) {
+                    margin-left: 30px;
+                }
+                li {
+                    margin-right: 50px;
+                    position: relative;
+                    @media (max-width: 1350px) {
+                        margin-right: 40px;
+                    }
+                }
+                a {
+                    width: fit-content;
+    
+                    .line {
+                        position: absolute;
+                        height: 1px;
+                        width: 1%;
+                        background-color: var(--green);
+                        bottom: -5px;
+                        transition: width 350ms ease-in-out;
+                    }
+                    &:hover {
+                        .line {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .request {
+            align-self: center;
+            background-color: var(--green);
+            color: white;
+            padding: 13px 20px;
+            border-radius: 20px;
+        }
+    }
+    .open {
+        height: 100vh !important;
+    }
+    .mov {
+        display: none;
+        @media (max-width: 920px) {
+            display: block;
+        }
+        background-color: white;
+        justify-self: flex-start;
+        padding: 20px 30px;
+        overflow: hidden;
+        .top {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .ham {
+                width: 60px;
+                height: 40px;
+                margin-top: 20px;
+                cursor: pointer;
+    
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    background-color: black;
+                    margin-bottom: 10px;
+                }
+            }
+            .logo {
+                width: 70px;
+            }
+        }
+        .links {
+            border-top: solid 1px black;
+            padding-top: 17px;
+            margin-top: 20px;
+            padding-bottom: 100px;
+            display: none;
+            .link {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                ul.child {
+                    display: none;
+                    margin-top: 20px;
+                    li {
+                        margin-bottom: 5px;
+                    }
+                    li.title {
+                        font-size: 22px;
+                        font-family: var(--bold);
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+                button {
+                    cursor: pointer;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-left: 0;
+                    margin-left: 0;
+                    .turn {
+                        transform: rotate(90deg);
+                    }
+                    img {
+                        transition: transform 150ms ease-in-out;
+                        width: 10px;
+                    }
+                    strong {
+                        font-size: 22px;
+                        padding-left: 0;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+.footerMenu {
+    background-color: var(--green);
+    position: absolute;
+    bottom: -170px;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 50px 30px;
+    display: none;
+        @media (max-width: 920px) {
+            display: none;
+        }
+    h2 {
+        margin: 10px 0;
+    }
+    ul {
+        display: flex;
+        margin-top: 30px;
+        li {
+            margin-right: 25px;
+            img {
+                width: 25px;
+            }
+        }
+    }
+}

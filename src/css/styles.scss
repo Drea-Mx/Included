@@ -1,0 +1,19 @@
+@use 'global/_reset';
+@use 'global/_typography';
+@use 'global/_global';
+
+
+@use 'sections/layout/header';
+@use 'sections/layout/footer';
+
+@use 'sections/home/hero';
+@use 'sections/home/diagram';
+@use 'sections/home/strategy';
+@use 'sections/home/results';
+@use 'sections/home/automated';
+@use 'sections/home/customers';
+@use 'sections/home/dei';
+@use 'sections/home/news';
+@use 'sections/home/explore';
+@use 'sections/home/demo';
+@use 'sections/home/newsletter';
